@@ -1,6 +1,6 @@
 # Minimal setup for a Web Node-React project
 
-Includes a React client and an Express server.
+Includes a React client and an Express server ready for production deployment, as detailed [here](https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/)
 
 ## Usage
 
@@ -45,7 +45,28 @@ node server.js
 - GET - /api/hello
 - POST - /api/world
 
-## Configuration
+## Production deployment to Heroku
+
+Ensure you have a [heroku](https://www.heroku.com/) account and create a new app.
+
+Install heroku:
+
+```
+curl https://cli-assets.heroku.com/install.sh | sh
+# or check out the [doc](https://devcenter.heroku.com/articles/heroku-cli).
+```
+
+Deploy committed app:
+
+```
+git push heroku master
+```
+
+If your repo is already set up:
+
+```
+heroku git:remote -a red-tetris-em
+```
 
 #TODO  
 [] use yarn import command to generate a yarn.lock file from package-lock.json
